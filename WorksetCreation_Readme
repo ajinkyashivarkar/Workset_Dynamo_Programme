@@ -1,0 +1,22 @@
+This readme file and code mentioned in it are created by Ajinkya Rajendra Shivarkar
+Contact me @ ajinkya.shivarkar@gmail.com
+******************************************************************************************************************
+Revit designers come across task of creating multiple worksets in their template files. This task is time consuming and very 
+
+monotonus. Also, desiners need to attach/link revit files corresponding to worksets. Keeping this requirement in mind, I 
+
+have come up with Dynamo code which reads the workset and revit link data from a text file and add corresponding worksets 
+
+and revit links. The text file can be kept anywhere on users/network machine and can be added through Dynamo input. The text 
+
+file has particular structure which should be followed by designers for suucessful execution of code. The structure of text 
+
+file is as below,
+
+WorkSet=DynamoTest1,Revitlink=C:\RVT Links\DGI-HLP-GW1-XX-M3-P-Revit.rvt
+
+"WorkSet=" Word to signify the name coming after it is name of Wortkset
+"DynamoTest1" is the name of Workset
+"," seperator to differentiate between Workset and Revit link
+"Revitlink=" Word to signify the path of Revit link file
+"C:\RVT Links\DGI-HLP-GW1-XX-M3-P-Revit.rvt" path of revit link file.
